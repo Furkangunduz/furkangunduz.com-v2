@@ -31,9 +31,13 @@ function AboutMe() {
 						<div className='flex flex-col gap-10 transition-opacity duration-[1200ms] ease-in-out opacity-0 group-hover:opacity-100'>
 							<p className='py-2 px-1 font-bold '>{AboutMeTexts[0]}</p>
 							<div className='flex gap-4 font-semibold'>
-								<Button>Get My Resume</Button>
-								<Button>Reach me</Button>
-								<Button>See my projects</Button>
+								<Button
+									href='../files/furkan-gunduz-resume.pdf'
+									downloadable={true}>
+									Get My Resume
+								</Button>
+								<Button href='#reach-me'>Reach me</Button>
+								<Button href='#projects'>See my projects</Button>
 							</div>
 						</div>
 					</div>
@@ -57,7 +61,9 @@ function AboutMe() {
 							))}
 						</div>
 					</div>
-					<div className='w-[90%] rounded-xl bg-primary-section-shadow mb-10 transition-opacity duration-[1200ms] ease-in-out opacity-0 group-hover:opacity-100'>
+					<div
+						id='reach-me'
+						className='w-[90%] rounded-xl bg-primary-section-shadow mb-10 transition-opacity duration-[1200ms] ease-in-out opacity-0 group-hover:opacity-100'>
 						<div className='w-full flex justify-center gap-16 my-12 '>
 							{reachMeImagesAndLinks.map(([image, link]) => (
 								<a href={link}>

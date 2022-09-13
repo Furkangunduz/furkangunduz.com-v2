@@ -8,6 +8,7 @@ function Projects() {
 	const [isHovering, handleMouseOver, handleMouseOut] = useHover();
 	return (
 		<div
+			id='projects'
 			className={` w-[50%] hover:w-[90%] bg-secondary text-textColor relative h-full transition-all duration-500 scroll-smooth `}
 			onMouseOver={handleMouseOver}
 			onMouseOut={handleMouseOut}>
