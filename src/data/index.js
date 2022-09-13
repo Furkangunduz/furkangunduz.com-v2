@@ -82,8 +82,8 @@ export const projectsCardInfos = [
             'Gsap'
         ],
         description: 'This website aims to assist anyone looking to travel to adventurous locations.<strong>TailwindCSS</strong> is used in this project for styling. For parallax effect used <strong>GSAP library</strong>.',
-        demoLink: "https://battleship-orpin.vercel.app/",
-        sourceLink: "https://github.com/Furkangunduz/Battleship",
+        demoLink: "https://parallax-drab-two.vercel.app/",
+        sourceLink: "https://github.com/Furkangunduz/parallax-landing-page",
     }
 ]
 
