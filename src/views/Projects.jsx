@@ -16,7 +16,7 @@ function Projects() {
 				<FirstView text='See my projects' />
 			) : (
 				<div className='w-[100%] h-screen group flex items-center flex-col overflow-auto gap-12 pt-12 pb-24'>
-					<div className='flex flex-col w-[75%] transition-opacity duration-[800ms] ease-in-out opacity-0 group-hover:opacity-100'>
+					<div className='flex flex-col gap-14 w-[75%] transition-opacity duration-[800ms] ease-in-out opacity-0 group-hover:opacity-100'>
 						{projectsCardInfos.map(
 							(
 								{ name, images, tags, description, demoLink, sourceLink },

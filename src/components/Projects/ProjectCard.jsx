@@ -3,9 +3,9 @@ import Button from '../Button';
 
 function ProjectCard({ name, tags, description, demoLink, sourceLink, images }) {
 	return (
-		<>
+		<div>
 			<div className='relative text-center rounded-lg overflow-x-hidden bg-white/20 mt-10 '>
-				<Carousel className='h-full w-full flex flex-col items-center relative'>
+				<Carousel>
 					{images.map((image, index) => (
 						<img key={index} className='W-full rounded-lg' src={image}></img>
 					))}
@@ -20,7 +20,7 @@ function ProjectCard({ name, tags, description, demoLink, sourceLink, images }) 
 						{tags.map((tag, index) => (
 							<p
 								key={index}
-								className='px-8 py-2 text-center bg-amber-300 backdropbackdrop-blur-lg text-black/80 border-[2px] border-black whitespace-nowrap rounded-lg'>
+								className='px-8 py-2 text-center text-white/90 font-semibold bg-tagBg backdropbackdrop-blur-lg  border-[2px] border-black whitespace-nowrap rounded-lg'>
 								{tag}
 							</p>
 						))}
@@ -39,7 +39,7 @@ function ProjectCard({ name, tags, description, demoLink, sourceLink, images }) 
 					</div>
 				</div>
 			</div>
-		</>
+		</div>
 	);
 }
 
