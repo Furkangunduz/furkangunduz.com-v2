@@ -12,7 +12,7 @@ module.exports = {
         "secondary-section-shadow": "rgba(214, 205, 164, 0.4);",
         "tagBg": "#495c83",
         "textColor": "#000",
-        "buttonBg": "#6c6f70",
+        "buttonBg": "#08c",
         "buttonText": "#fff"
       }
     },

@@ -1,21 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=DM+Sans:wght@400;700&family=DM+Serif+Display&family=Inter&family=Karla:wght@400;700&family=Poppins:wght@500&family=Red+Hat+Display&family=Roboto:wght@300;400;500;700;900&family=Sora:wght@300;400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-* {
-	font-family: Arial, Helvetica, sans-serif;
-}
+@layer components {
+	* {
+		font-family: 'Sora', sans-serif;
+	}
 
-::-webkit-scrollbar {
-	width: 7.5px;
-}
-::-webkit-scrollbar-track {
-	background-color: var(--secondary);
-}
-::-webkit-scrollbar-thumb {
-	background: #888;
-	border-radius: 10px;
-}
-::-webkit-scrollbar-thumb:hover {
-	background: #555;
+	::-webkit-scrollbar {
+		width: 7.5px;
+	}
+	::-webkit-scrollbar-track {
+		background-color: var(--secondary);
+	}
+	::-webkit-scrollbar-thumb {
+		background: #888;
+		border-radius: 10px;
+	}
+	::-webkit-scrollbar-thumb:hover {
+		background: #555;
+	}
 }

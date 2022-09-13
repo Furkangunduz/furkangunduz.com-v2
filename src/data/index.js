@@ -58,9 +58,10 @@ export const projectsCardInfos = [
         name: "BattleShip",
         images: [
             battleshipHome,
+            battleshipWaiting,
             battleshipPrepare,
             battleshipGame,
-            battleshipWaiting],
+        ],
         tags: [
             'React',
             'NodeJS',

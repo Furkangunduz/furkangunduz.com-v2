@@ -1,17 +1,25 @@
+import { useEffect } from 'react';
+import { useScreenSize } from '../hooks/useScreenSize';
+
 import FirstView from '../components/FirstView';
 import Button from '../components/Button';
 
 import useHover from '../hooks/useHover';
-
 //pictures
 import myPicture from '../images/personal-photo.jpg';
 import MernStack from '../images/mernstack.png';
-
 //content
 import { techImages, reachMeImagesAndLinks, AboutMeTexts } from '../data';
 
 function AboutMe() {
 	const [isHovering, handleMouseOver, handleMouseOut] = useHover();
+	const [screenSize, handleWindowSizeChange] = useScreenSize(window);
+
+	useEffect(() => {
+		window.addEventListener('resize', handleWindowSizeChange);
+	}, []);
+
+	const isMobile = screenSize < 720;
 
 	return (
 		<div
@@ -37,7 +45,9 @@ function AboutMe() {
 									Get My Resume
 								</Button>
 								<Button href='#reach-me'>Reach me</Button>
-								<Button href='#projects'>See my projects</Button>
+								{isMobile && (
+									<Button href='#projects'>See my projects</Button>
+								)}
 							</div>
 						</div>
 					</div>
@@ -65,8 +75,8 @@ function AboutMe() {
 						id='reach-me'
 						className='w-[90%] rounded-xl bg-primary-section-shadow mb-10 transition-opacity duration-[1200ms] ease-in-out opacity-0 group-hover:opacity-100'>
 						<div className='w-full flex justify-center gap-16 my-12 '>
-							{reachMeImagesAndLinks.map(([image, link]) => (
-								<a href={link}>
+							{reachMeImagesAndLinks.map(([image, link], index) => (
+								<a key={index} href={link}>
 									<img src={image} className='w-10 h-10' alt='' />
 								</a>
 							))}

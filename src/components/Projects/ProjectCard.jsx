@@ -20,7 +20,7 @@ function ProjectCard({ name, tags, description, demoLink, sourceLink, images }) 
 						{tags.map((tag, index) => (
 							<p
 								key={index}
-								className='px-8 py-2 text-center text-white/90 font-semibold bg-tagBg backdropbackdrop-blur-lg  border-[2px] border-black whitespace-nowrap rounded-lg'>
+								className='px-8 py-2 text-center text-white/90 font-semibold bg-tagBg backdropbackdrop-blur-lg whitespace-nowrap rounded-lg'>
 								{tag}
 							</p>
 						))}
