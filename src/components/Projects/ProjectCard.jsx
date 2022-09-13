@@ -4,14 +4,14 @@ import Button from '../Button';
 function ProjectCard({ name, tags, description, demoLink, sourceLink, images }) {
 	return (
 		<div>
-			<div className='relative text-center rounded-lg overflow-x-hidden bg-white/20 mt-10 '>
+			<div className='relative text-center rounded-t-lg overflow-x-hidden bg-white/50 mt-10 '>
 				<Carousel>
 					{images.map((image, index) => (
-						<img key={index} className='W-full rounded-lg' src={image}></img>
+						<img key={index} className='W-full rounded-t-lg' src={image}></img>
 					))}
 				</Carousel>
 			</div>
-			<div className='w-[100%] bg-white px-4 pt-7 pb-6 '>
+			<div className='w-[100%] bg-white px-4 pt-7 pb-6 rounded-b-lg'>
 				<div className='w-[100%] flex flex-col justify-between items-center gap-5 '>
 					<a href='https://github.com/Furkangunduz/Bilet-Buldum'>
 						<h2 className='font-semibold text-2xl'>{name}</h2>
