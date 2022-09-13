@@ -16,11 +16,11 @@ function ProjectCard({ name, tags, description, demoLink, sourceLink, images }) 
 					<a href='https://github.com/Furkangunduz/Bilet-Buldum'>
 						<h2 className='font-semibold text-2xl'>{name}</h2>
 					</a>
-					<div className='flex gap-4'>
+					<div className='flex gap-2'>
 						{tags.map((tag, index) => (
 							<p
 								key={index}
-								className='px-8 py-2 text-center bg-tagBg text-white whitespace-nowrap rounded-lg'>
+								className='px-8 py-2 text-center bg-amber-300 backdropbackdrop-blur-lg text-black/80 border-[2px] border-black whitespace-nowrap rounded-lg'>
 								{tag}
 							</p>
 						))}
