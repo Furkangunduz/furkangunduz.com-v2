@@ -39,7 +39,7 @@ function AboutMe() {
 						<div className='flex flex-col gap-10 transition-opacity duration-[1200ms] ease-in-out opacity-0 group-hover:opacity-100'>
 							<p className='py-2 px-1 font-bold '>{AboutMeTexts[0]}</p>
 							<div className='flex gap-4 font-semibold'>
-								<Button href='https://drive.google.com/file/d/1CC9MUipcXS49MmfGHL1gWHVgxnQl11wh/view?usp=sharing'>
+								<Button href='https://drive.google.com/file/d/1NzkseBva4N1CQhm8j2mJROPAmgzh0RiL/view?usp=sharing'>
 									See My Resume
 								</Button>
 								<Button href='#reach-me'>Reach me</Button>
